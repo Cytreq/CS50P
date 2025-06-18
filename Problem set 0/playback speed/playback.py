@@ -4,6 +4,3 @@ words = variable.split() #make list of words that were in variable (sorry for ba
 output = '...'.join(words)  #making ... before every word
 
 print(output)
-
-
-
