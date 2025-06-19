@@ -1,32 +1,12 @@
-variable = input() #ask user for iput
 
-# converting to emojis
-def convert(variable):
-    text_sad =  variable.replace(":(", "🙁")
-    text_happy = variable.replace(":)", "🙂")
-    return text_sad, text_happy
-    
-#main part of the program
 def main():
-    text_sad, text_happy = convert(variable)
-    converted_text = convert(variable)
+    msg = input()
+    result = convert(msg)
+    print(result)
 
-    if "hello :)" in variable and "goodbye :(" in variable: 
-        print(converted_text)
-   
-    elif "hello :)" in variable:
-        print(text_happy)
-
-    elif "goodbye :(" in variable:
-        print(text_sad)
-
-
+def convert(msg):
+    msg1 = msg.replace(":)", "😀")
+    msg2 = msg1.replace(":(", "🙁")
+    return msg2
 
 main()
-
-
-### """ I have to clean this code a litlle bit 
-#   fix the bug with "hello :) goodbye :( because I'm getting wrong input in this case""""
-
-
-
